@@ -5,7 +5,8 @@
 [![Languages](https://img.shields.io/github/languages/count/lucaslousada/letmeask?color=835afd&style=flat-square)](#)
 [![License](https://img.shields.io/github/license/lucaslousada/letmeask?color=835afd&style=flat-square)](LICENSE.md)
 
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
+Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.
+Você pode acessar a aplicação através [deste link](https://letmeask-5e01c.web.app/).
 
 Este é um projeto desenvolvido durante a [Next Level Week Together](https://nextlevelweek.com/), apresentada dos dias 20 a 27 de Junho de 2021.
 
