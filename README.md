@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - ReactJS
 - Firebase
 - TypeScript
-- SASS
+- Styled Components
 
 ## Layout
 
