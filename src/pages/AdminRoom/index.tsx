@@ -13,7 +13,7 @@ import { RoomCode } from '../../components/RoomCode/index';
 import { useRoom } from '../../hooks/useRoom';
 import { database } from '../../services/firebase';
 
-import '../room.scss';
+import { Container, RoomTitle } from '../room';
 
 type RoomParams = {
   id: string;
@@ -54,7 +54,7 @@ export function AdminRoom() {
   }
 
   return (
-    <div id="page-room">
+    <Container>
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
@@ -66,10 +66,10 @@ export function AdminRoom() {
       </header>
 
       <main className="content">
-        <div className="room-title">
+        <RoomTitle>
           <h1>Sala {title}</h1>
           {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
-        </div>
+        </RoomTitle>
 
         <div className="questions-list">
           {questions.map(question => {
@@ -108,6 +108,6 @@ export function AdminRoom() {
           })}
         </div>
       </main>
-    </div>
+    </Container>
   );
 }

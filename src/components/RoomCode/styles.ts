@@ -1,4 +1,6 @@
-.room-code {
+import styled from 'styled-components';
+
+export const TagButton = styled.button`
   height: 4rem;
   border-radius: 0.8rem;
   overflow: hidden;
@@ -29,5 +31,9 @@
     width: 24rem;
     font-size: 1.4rem;
     font-weight: 500;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
-}
+`;

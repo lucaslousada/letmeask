@@ -1,4 +1,6 @@
-.button {
+import styled from 'styled-components';
+
+export const TagButton = styled.button`
   height: 5rem;
   border-radius: 0.8rem;
   font-weight: 500;
@@ -33,4 +35,4 @@
     opacity: 0.6;
     cursor: not-allowed;
   }
-}
+`;

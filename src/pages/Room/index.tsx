@@ -12,7 +12,7 @@ import { useRoom } from '../../hooks/useRoom';
 
 import { database } from '../../services/firebase';
 
-import '../room.scss';
+import { Container, FormFooter, RoomTitle } from '../room';
 
 type RoomParams = {
   id: string;
@@ -63,7 +63,7 @@ export function Room() {
   }
 
   return (
-    <div id="page-room">
+    <Container>
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
@@ -72,10 +72,10 @@ export function Room() {
       </header>
 
       <main>
-        <div className="room-title">
+        <RoomTitle>
           <h1>Sala {title}</h1>
           {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
-        </div>
+        </RoomTitle>
 
         <form onSubmit={handleSendQuestion}>
           <textarea
@@ -84,7 +84,7 @@ export function Room() {
             value={newQuestion}
           />
 
-          <div className="form-footer">
+          <FormFooter>
             {user ? (
               <div className="user-info">
                 <img src={user.avatar} alt={user.name} />
@@ -94,7 +94,7 @@ export function Room() {
               <span>Para enviar uma pergunta, <button>faça seu login.</button></span>
             )}
             <Button type="submit" disabled={!user}>Enviar pergunta</Button>
-          </div>
+          </FormFooter>
         </form>
 
         <div className="questions-list">
@@ -125,6 +125,6 @@ export function Room() {
           })}
         </div>
       </main>
-    </div>
+    </Container>
   );
 }
